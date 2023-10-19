@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .box {
+            
+            width: 150px;
+            height: 150px;
+            border: 2px solid #333;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        #box1 {
+            background-color: #FF5733;
+            float: left;
+            position: fixed;
+        }
+
+        #box2 {
+            background-color: aquamarine;
+            position: relative;
+            top: 20px;
+            animation: moveBox 3s linear infinite alternate;
+        }
+
+        #box3 {
+            background-color: #5733FF;
+            position: absolute;
+            top: 30px;
+            left: 35%;
+            transform: rotate(10deg);
+            transition: transform 1s ease-in-out;
+
+        }
+
+        @keyframes moveBox {
+            0% {
+                
+                left: 20%;
+            }
+            100% {
+                
+                left: 10%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1">Box 1</div>
+    <div class="box" id="box2">Box 2</div>
+    <div class="box" id="box3">Box 3</div><br>
+    <div>
+        <center><p>Nmae : Kanjariya Rahul |  Roll Number : 26 </p></center>
+    </div>
+</body>
+</html>
