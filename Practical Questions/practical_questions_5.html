@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Monsterlessons Academy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: sans-serif;
+    }
+
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #d2d3d4;
+      padding: 10px 0;
+    }
+
+    .form-container {
+      width: 100%;
+      background: #fff;
+      padding: 10px;
+      max-width: 450px;
+      border-radius: 15px;
+      box-shadow: rgba(97, 95, 95, 0.1) 10px 0px 50px;
+    }
+
+    .form-container__details {
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    .form-container__title {
+      font-size: 38px;
+      color: #555;
+      margin-bottom: 7px;
+    }
+
+    .label {
+      margin-bottom: 5px;
+      font-size: 15px;
+      font-weight: 600;
+      color: #777;
+    }
+
+    .input {
+      margin-bottom: 10px;
+    }
+
+    .input-field {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px solid rgb(202, 198, 198);
+      margin-bottom: 10px;
+    }
+
+    .input-field:hover {
+      border: #008CBA solid 2px;
+      border-radius: 5px;
+    }
+
+    .text_message {
+      width: 100%;
+      height: 150px;
+      padding: 5px;
+    }
+
+    .text_message:hover {
+      border: #008CBA solid 2px;
+      border-radius: 5px;
+    }
+
+    .form__submit {
+      background: #037ef3;
+      color: #fff;
+      font-weight: 600;
+      width: 100%;
+      border-radius: 5px;
+      cursor: pointer;
+      padding: 10px 15px;
+      margin-bottom: 10px;
+      border: 0;
+      transition: all 0.8s;
+      font-size: 18px;
+    }
+
+    .form__submit:hover {
+      background: #0271da;
+    }
+
+    .custom-select {
+      width: 100%;
+      padding: 10px;
+    }
+
+    @media (max-width: 600px) {
+      .form-container {
+        padding: 30px 25px;
+        width: 90%;
+      }
+
+      .icon {
+        padding: 18px 15px;
+        min-width: 40px;
+      }
+
+      .input-field,
+      .form__submit {
+        padding: 18px 15px;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="form-container">
+    <div class="form-container__details">
+      <div class="form-container__title">HTML Form</div>
+    </div>
+    <form class="form">
+      <div class="input">
+        <div class="label">Name</div>
+        <input class="input-field" type="text" placeholder="Enter Your Name" required>
+      </div>
+
+      <div class="input">
+        <div class="label">Email</div>
+        <input class="input-field" type="email" placeholder="demo@gmail.com" required>
+      </div>
+
+      <div class="input">
+        <div class="label">Phone Number</div>
+        <input class="input-field" type="tel" placeholder="9265614291" pattern="[0-9]{10}" required>
+      </div>
+      <div>
+        <div class="input">
+          <div class="label">Address</div>
+          <textarea name="address" placeholder="Enter Your Address.." class="text_message" required></textarea>
+        </div>
+
+        <div class="input">
+          <select class="custom-select">
+            <option value="0">Select Country</option>
+            <option value="1">Armenia</option>
+            <option value="2">Bangladesh</option>
+            <option value="3">China</option>
+            <option value="4">India</option>
+            <option value="5">Kuwait</option>
+          </select>
+        </div>
+      </div>
+      <input type="submit" value="submit" class="form__submit">
+    </form>
+    <center>
+      <p>Name : Kanjariya Rahul | Roll Number : 26 </p>
+    </center>
+  </div>
+</body>
+
+</html>

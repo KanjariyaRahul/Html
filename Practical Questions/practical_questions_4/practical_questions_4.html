@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Image Grid</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        div {
+            width: 70%;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .grid {
+            display: grid;
+            padding-left: 250px;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+
+        .grid div {
+            border: 2px solid rgb(2, 2, 2);
+            border-radius: 5px;
+            padding: 10px;
+            margin: 5px;
+            transition: transform 0.3s;
+        }
+
+        .grid div:hover {
+            transform: scale(1.05);
+            background-color: rgb(207, 216, 251);
+        }
+
+        .grid img {
+            width: 100%;
+            float: left;
+            transition: transform 0.3s;
+        }
+
+        .grid img:hover {
+            transform: rotate(10deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid">
+        <div>
+            <h2>Image 1</h2>
+            <img src="./img_1.jpeg" alt="Image 1">
+        </div>
+        <div>
+            <h2>Image 2</h2>
+            <img src="./img_2.jpeg" alt="Image 2">
+        </div>
+        <div>
+            <h2>Image 3</h2>
+            <img src="./img_3.jpeg" alt="Image 3">
+        </div>
+        <div>
+            <h2>Image 4</h2>
+            <img src="./img_4.jpg" alt="Image 4">
+        </div>
+    </div>
+    <center>
+        <p>Name: Rahul Kanjariya | Roll Number : 26 </p>
+    </center>
+</body>
+
+</html>
